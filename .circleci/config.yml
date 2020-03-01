@@ -5,13 +5,8 @@ orbs:
 
 jobs:
   build:
-   executor: win/default
-   steps:
-    - checkout
-    - run: dotnet tool install --global PowerShell
-    - run: pwsh ./proof-of-concept.ps1
-
-
-
-	
-
+    executor: win/default
+    steps:
+      - checkout
+      - run: dotnet tool install --global PowerShell
+      - run: pwsh ./proof-of-concept.ps1
